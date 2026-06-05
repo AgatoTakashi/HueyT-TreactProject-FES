@@ -581,11 +581,127 @@ PRICING ↓
 
 */
 
-
 #pricing .row {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-between;
+    text-align: center; 
+    text-wrap: nowrap;
+    margin-top: 32px;
+    width: 100%;
+    position: relative;
+}
+
+.plans__blob {
+    position: absolute;
+    left: -110px;
+    bottom: -281px;
+    width: 256px;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.plan {
+    border: 1px solid var(--gray-border);
+    border-radius: 8px;
+    margin: 24px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.plan__top, .plan__middle, .plan__bottom {
+    padding: 32px 0px;
+}
+
+.plan:nth-child(1) .plan__stripe, .plan:nth-child(1) .plan__button {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan:nth-child(2) {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.plan:nth-child(2) .plan__name, .plan:nth-child(2) .plan__price, .plan:nth-child(2) .plan__target, .plan:nth-child(2) .plan__duration, .plan:nth-child(2) .plan__feature {
+    color: white;
+}
+
+.plan:nth-child(2) .plan__button {
+    color: var(--purple);
+}
+
+.plan:nth-child(3) .plan__stripe, .plan:nth-child(3) .plan__button {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.plan__stripe {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.plan__name, .plan__price, .plan__target {
+    color: black;
+}
+
+.plan__name, .plan__target {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.plan__price {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.plan__duration, .plan__feature {
+    font-size: 16px;
+}
+
+.plan__duration {
+    font-weight: 600;
+    color: #a0aec0;
+}
+
+.plan__feature {
+    margin: 20px;
+    color: var(--font-light);
+}
+
+.plan__middle {
+    border-top: 2px solid var(--gray-border);
+    border-bottom: 2px solid var(--gray-border);
+}
+.plan:nth-child(2) .plan__middle {
+    border-top: 2px solid rgb(102, 126, 234);
+    border-bottom: 2px solid rgb(102, 126, 234);
+}
+
+.plan__button {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 500px;
+    outline: none;
+    border: none;
+    padding: 16px 64px;
+}
+
+.plan__button:hover {
+    transform: translate(1px, -1px);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 /* 
