@@ -790,19 +790,108 @@ TESTIMONIALS ↓
     transform: rotate(180deg);
 }
 
+.testimonial__button:hover {
+  background-color: rgb(229, 231, 235);
+}
+
 /* 
 
 START / CALL TO ACTION ↓
 
 */
 
-
-
 #start .row {
     position: relative;
     overflow: hidden;
 }
 
+.start__blob--1 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20rem;
+    width: 20rem;
+    transform: translate(-5rem, 8rem);
+    color: rgb(80 17 204);
+    opacity: 0.5;
+}
+
+.start__blob--2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 20rem;
+    width: 20rem;
+    transform: translate(5rem, -16rem);
+    color: rgb(80 17 204);
+    opacity: 0.5;
+}
+
+.start__container {
+    padding: 96px 0;
+    width: 100%;
+    background-color: rgb(100, 21, 255);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start__row {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start__title, .start__buttons {
+    width: 50%;
+}
+
+.start__title {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    z-index: 2;
+}
+
+.start__buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.start__button {
+    text-wrap: nowrap;
+    color: white;
+    border: none;
+    border-radius: 500px;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn1 {
+    background: #f56565;
+    margin-right: 32px;
+}
+
+.btn1:hover {
+    background-color: rgba(229, 62, 62);
+}
+
+.btn2 {
+    background: none;
+    border: 1px solid white;
+}
+
+.btn2:hover {
+    background-color: rgba(247, 250, 252);
+    color: rgba(100, 21, 255);
+}
 
 /* 
 
